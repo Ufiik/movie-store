@@ -1,0 +1,1 @@
+.nav-icon{transition:all ease-in-out 200ms;flex-direction:row;cursor:pointer;display:none}.nav-icon span{width:13px;height:13px;border-radius:50%;margin-right:4px;background:#9b9ea3}.nav-icon-active{transform:rotate(-45deg)}@media (max-width: 1000px){.nav-icon{display:-webkit-flex;display:-ms-flex;display:flex;height:50px;flex-direction:row;align-items:center}}
