@@ -8,3 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.classList.toggle("nav-opened");
   });
 });
+
+(function (jQuery) {
+  $(".owl-carousel").owlCarousel({
+    animateOut: 'slideOutDown',
+    items: 1,
+    nav: false,
+    dots: true,
+    dotsContainer: ".banner-dots"
+  });
+}(jQuery));

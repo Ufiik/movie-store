@@ -38,7 +38,7 @@
   align-items: center
   &:hover
     + .header-nav-popup
-      bottom: -53px
+      bottom: -48px
       opacity: 1
 
 .header-nav-popup
@@ -51,9 +51,11 @@
   background: $red
   left: 50%
   transform: translateX(-50%)
-  padding: 10px
+  padding: 7px 11px
   border-radius: 5px
   bottom: -60px
+  font-weight: 700
+  z-index: 999
   &::before
     content: ''
     display: inline-block
@@ -64,7 +66,8 @@
     border-color: transparent transparent $red transparent
     position: absolute
     top: -7px
-    left: 27px
+    left: 50%
+    transform: translateX(-50%)
 
 .icon-link
   &:hover
@@ -95,6 +98,7 @@
     transform: translate(-50%, 0)
     background: #fff
     border-radius: 0 0 7px 7px
+    z-index: 999
 
   .header-nav-list
     display: -webkit-flex
