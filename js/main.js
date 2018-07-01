@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     items: 1,
     nav: false,
     dots: true,
-    dotsContainer: ".banner-dots"
+    dotsContainer: ".banner-dots",
+    mouseDrag: false
   });
 }(jQuery));

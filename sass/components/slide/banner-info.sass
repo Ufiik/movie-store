@@ -1,0 +1,110 @@
+.banner-info-wrapper
+  border-top: 1px solid #26221e
+  position: absolute
+  width: 100%
+  min-height: 53px
+  bottom: 0
+  overflow: hidden
+  z-index: 999
+
+.banner-info
+  color: #fff
+  min-height: 53px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.banner-info-date, .banner-info-likes
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+.published-container, .updated-container, .rating-container
+  text-transform: uppercase
+  color: #fff
+  font-weight: 700
+
+.updated-container, .rating-container
+  margin-left: 28px
+
+.published-date, .updated-date
+  font-weight: 400
+  color: $red
+
+.stars
+  display: inline-block
+  margin-left: 11px
+
+.comments-container, .downloads-container
+  margin-left: 53px
+
+.likes-container, .comments-container, .downloads-container
+  position: relative
+
+.likes-amount, .comments-amount, .downloads-amount
+  &::before
+    position: absolute
+    left: -25px
+    top: 0
+
+.likes-amount
+  &::before
+    content: url("icons/like.svg")
+    top: 1px
+
+.comments-amount
+  &::before
+    content: url("icons/comments.svg")
+    top: 3px
+
+.downloads-amount
+  &::before
+    content: url("icons/downloads.svg")
+    top: 2px
+
+.banner-sk
+  height: 100%
+  width: 100%
+  background-image: url("content-pictures/banner.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 100%
+  &::before
+    content: ""
+    position: absolute
+    z-index: -1
+    width: 200%
+    height: 200%
+    background: inherit
+    box-shadow: inset 0 0 0 200px rgba(7, 7, 7, 0.5)
+    filter: blur(15px)
+    opacity: 0.7
+    top: 0
+
+@media (max-width: 910px)
+  .banner-info-date, .banner-info-likes
+    flex-direction: column
+
+  .banner-info
+    div
+      margin-top: 7px
+
+  .updated-container, .rating-container, .comments-container, .downloads-container
+    margin-left: 0
+
+  .rating-container
+    margin-right: 0
+
+  .likes-container
+    margin-top: 20px
+
+  .likes-container, .comments-container, .downloads-container
+    align-self: flex-end
+
+@media (max-width: 550px)
+  .banner-info
+    font-size: 12px
