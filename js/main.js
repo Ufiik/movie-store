@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 (function (jQuery) {
   $(".owl-carousel").owlCarousel({
-    animateOut: 'slideOutDown',
+    animateOut: 'fadeOutDown',
+    animateIn: 'fadeInDown',
     items: 1,
     nav: false,
     dots: true,
