@@ -1,0 +1,81 @@
+.movies-wrapper
+  margin-top: 37px
+
+.movies-header
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.search-caption
+  h5
+    font-size: 17px
+    color: #3f444e
+    text-transform: uppercase
+
+.sorting-wrapper
+  li
+    display: inline-block
+    margin-right: 44px
+    position: relative
+    font-size: 15px
+    font-family: $calibri
+    font-style: italic
+    a
+      color: #989ca4
+      &:hover
+        color: #3f444e
+    &::after
+      content: "\002F"
+      position: absolute
+      right: -28px
+      color: #989ca4
+      top: -1px
+    &:last-child
+      margin-right: 0
+      &::after
+        display: none
+
+.input-search-wrapper
+  position: relative
+
+.input-search
+  border-bottom: 1px solid #3f444e
+  opacity: 0.2
+  padding: 5px 25px 5px 2px
+  width: 100%
+  &::-webkit-input-placeholder
+    font-style: italic
+    font-size: 13px
+  &::-moz-placeholder
+    font-style: italic
+    font-size: 13px
+  &:-ms-input-placeholder
+    font-style: italic
+    font-size: 13px
+  &:-moz-placeholder
+    font-style: italic
+    font-size: 13px
+
+.button-search
+  cursor: pointer
+  position: absolute
+  right: 0
+  top: 7px
+  width: 19px
+  height: 19px
+  background-image: url("icons/search-icon.svg")
+  background-repeat: no-repeat
+
+@media (max-width: 800px)
+  .movies-header
+    flex-direction: column
+    align-items: center
+    div
+      margin-top: 10px
+      &:first-child
+        margin-top: 0
+  .input-search-wrapper
+    width: 80%
