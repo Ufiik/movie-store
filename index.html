@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>MOVIE STORE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+
+  <svg height="0">
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </svg>
+
+  <svg height="0">
+    <filter id="blur-download">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+  </svg>
+
+<!-- SVG фильтры -->
 
   <div class="wrapper">
     <header class="header-wrapper">
@@ -218,38 +232,96 @@
           </div>
         </div>
         <div class="movies-grid">
+          <figure class="movies-grid-item">
+            <span class="movies-like-count">3,542</span>
+            <img class="grid-picture" src="css/content-pictures/layer-17.png" alt="l-17">
+            <span class="movies-download">
+              <a href="#">
+                <img src="css/icons/download.svg" alt="download">
+              </a>
+            </span>
+            <figcaption class="movie-caption">Guardians of the Galaxy</figcaption>
+          </figure>
+          <figure class="movies-grid-item">
+            <img class="grid-picture" src="https://dummyimage.com/207x400/000/fff" alt="">
+          </figure>
+          <figure class="movies-grid-item">
+            <span class="movies-like-count">2,248</span>
+            <img class="grid-picture" src="css/content-pictures/layer-19.png" alt="l-19">
+            <span class="movies-download">
+              <a href="#">
+                <img src="css/icons/download.svg" alt="download">
+              </a>
+            </span>
+            <figcaption class="movie-caption">Captain America</figcaption>
+          </figure>
+          <figure class="movies-grid-item">
+            <span class="movies-like-count">2,951</span>
+            <img class="grid-picture" src="css/content-pictures/layer-15.png" alt="l-15">
+            <span class="movies-download">
+              <a href="#">
+                <img src="css/icons/download.svg" alt="download">
+              </a>
+            </span>
+            <figcaption class="movie-caption">The Amazing Spider-Man 2</figcaption>
+          </figure>
+          <figure class="movies-grid-item">
+            <span class="movies-like-count">3,248</span>
+            <img class="grid-picture" src="css/content-pictures/layer-20.png" alt="l-20">
+            <span class="movies-download">
+              <a href="#">
+                <img src="css/icons/download.svg" alt="download">
+              </a>
+            </span>
+            <figcaption class="movie-caption">The Incredible Hulk</figcaption>
+          </figure>
+          <figure class="movies-grid-item">
+            <span class="movies-like-count">3,234</span>
+            <img class="grid-picture" src="css/content-pictures/layer-21.png" alt="l-21">
+            <span class="movies-download">
+              <a href="#">
+                <img src="css/icons/download.svg" alt="download">
+              </a>
+            </span>
+            <figcaption class="movie-caption">The First Avenger</figcaption>
+          </figure>
+          <figure class="movies-grid-item">
+            <img class="grid-picture" src="css/content-pictures/layer-6.png" alt="l-6">
+          </figure>
           <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x189/000/fff" alt="">
+            <img class="grid-picture" src="https://dummyimage.com/207x397/000/fff" alt="">
           </div>
           <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x400/000/fff" alt="">
+            <img class="grid-picture" src="css/content-pictures/layer-12.png" alt="l-12">
           </div>
           <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x189/000/fff" alt="">
+            <img class="grid-picture" src="css/content-pictures/layer-11.png" alt="l-11">
           </div>
           <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x189/000/fff" alt="">
+            <img class="grid-picture" src="https://dummyimage.com/207x154/000/fff" alt="">
           </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x189/000/fff" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="download-wrapper">
+      <div class="download-info container">
+        <span class="download-name">Downloading -  Captain America<span class="download-info-size">(105 / 215 MB)</span>
+        </span>
+        <div class="download-icons">
+          <div class="download-delete">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="15" viewBox="0 0 13 15"><defs><path id="ytzxa" d="M1309.07 1415.62h-.93v7.5c0 1.04-.83 1.88-1.85 1.88h-5.58a1.87 1.87 0 0 1-1.85-1.88v-7.5h-.93a.93.93 0 0 1-.93-.93c0-.52.42-.94.93-.94h2.78v-2.81c0-.52.42-.94.93-.94h3.72c.51 0 .93.42.93.94v2.81h2.78c.51 0 .93.42.93.94s-.42.93-.93.93zm-7.43 0a.93.93 0 0 0-.93.94v5.63c0 .52.42.93.93.93.52 0 .93-.41.93-.93v-5.63a.93.93 0 0 0-.93-.94zm2.79-2.8a.93.93 0 0 0-.93-.95.93.93 0 0 0-.93.94v.94h1.86zm1.86 3.74a.93.93 0 0 0-.93-.94.93.93 0 0 0-.93.94v5.63c0 .52.41.93.93.93.51 0 .93-.41.93-.93z"/></defs><g><g transform="translate(-1297 -1410)"><use class="icon" fill="#fff" xlink:href="#ytzxa"/></g></g></svg>
+            </a>
           </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x189/000/fff" alt="">
+          <div class="download-retry">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="16" viewBox="0 0 13 16"><defs><path id="5owia" d="M1348.87 1420.47a6.45 6.45 0 0 1-6.37 5.53 6.5 6.5 0 1 1 1.27-12.86l-1.46-1.44a1 1 0 0 1 0-1.41.99.99 0 0 1 1.4 0l3 2.96a1 1 0 0 1 0 1.42l-3 3.03a.99.99 0 0 1-1.4 0 1 1 0 0 1 0-1.41l1.14-1.17a4.5 4.5 0 1 0 3.5 4.88h.05a1 1 0 0 1 2 0c0 .18-.05.33-.13.47z"/></defs><g><g transform="translate(-1336 -1410)"><use class="icon" fill="#fff" xlink:href="#5owia"/></g></g></svg>
+            </a>
           </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/437x189/000/fff" alt="">
-          </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x397/000/fff" alt="">
-          </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/438x154/000/fff" alt="">
-          </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x154/000/fff" alt="">
-          </div>
-          <div class="movies-grid-item">
-            <img src="https://dummyimage.com/207x154/000/fff" alt="">
+          <div class="download-cancel">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><path id="sph5a" d="M1383 1427a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-14a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm1.46 5.98l1.21 1.2c.4.41.4 1.07 0 1.48-.4.4-1.06.4-1.47 0l-1.22-1.21-1.21 1.2c-.4.41-1.07.41-1.48 0-.4-.4-.4-1.06 0-1.46l1.22-1.21-1.21-1.21c-.41-.4-.41-1.06 0-1.47.4-.4 1.06-.4 1.47 0l1.21 1.2 1.22-1.2c.4-.4 1.06-.4 1.47 0 .4.4.4 1.06 0 1.47z"/></defs><g><g transform="translate(-1375 -1411)"><use class="icon" fill="#fff" xlink:href="#sph5a"/></g></g></svg>
+            </a>
           </div>
         </div>
       </div>
