@@ -19,4 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
     dotsContainer: ".banner-dots",
     mouseDrag: false
   });
+
+  var $moviesGrid = $(".movies-grid");
+
+  $moviesGrid.imagesLoaded().progress(function () {
+    $moviesGrid.masonry({
+      itemSelector: ".movies-grid-item",
+      columnWidth: ".movies-grid-item",
+      gutter: 18
+    });
+  });
 }(jQuery));
