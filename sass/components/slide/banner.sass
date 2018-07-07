@@ -14,8 +14,8 @@
   font-size: 14px
   color: #fff
   position: absolute
-  right: 155px
-  bottom: 170px
+  right: 166px
+  bottom: 150px
   min-width: 121px
   min-height: 41px
   border-radius: 5px
@@ -79,3 +79,24 @@
   font-weight: 700
   color: #fff
   font-style: bold
+
+@media (max-width: 1120px)
+  .banner-link
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+
+@media (max-width: 650px)
+  .banner-link
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+
+@media (max-width: 500px)
+  .banner-link
+    min-width: 101px
+    min-height: 31px
+    font-size: 12px
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)

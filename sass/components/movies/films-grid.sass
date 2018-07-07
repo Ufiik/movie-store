@@ -3,22 +3,33 @@
 
 .movies-grid-item
   margin-bottom: 14px
-  box-sizing: content-box
   cursor: pointer
   border-radius: 10px
-  > img
-    transition: all ease 200ms
-    border-radius: 10px
-    box-sizing: content-box
   &:hover
-    > img
-      -webkit-box-shadow: 0px 2px 5px 0px #9E9E9E
-      box-shadow: 0px 2px 5px 0px #9E9E9E
-      border: 4px solid $red
+    .movies-info-play
+      background-color: $red
     > .movies-download
       &::after
         width: 40px
         height: 40px
+    &::before
+      box-shadow: inset 0 0 0 4px $red
+  &::before
+    border-radius: 4px
+    position: absolute
+    content: ""
+    top: 0
+    height: 100%
+    width: 100%
+    transition: all ease 200ms
+    box-shadow: inset 0 0 0 0 $red
+    z-index: 999
+
+
+
+
+.grid-picture
+  border-radius: 4px
 
 .movies-like-count
   font-size: 14px
@@ -56,3 +67,70 @@
   bottom: 16px
   width: 100%
   text-align: center
+
+.movies-item-info
+  background: #fff
+  padding: 18px 22px
+  font-size: 14px
+  position: relative
+  > span
+      &:first-child
+        margin-top: 0
+
+
+.movies-item-rating, .movies-item-comments, .movies-item-download
+  display: block
+  margin-top: 16px
+  margin-left: 27px
+  position: relative
+  &::before
+    position: absolute
+
+.movies-item-rating
+  &::before
+    content: url("icons/like.svg")
+    left: -25px
+    top: 2px
+
+.movies-item-comments
+  &::before
+    content: url("icons/comments.svg")
+    left: -25px
+    top: 2px
+
+.movies-item-download
+  &::before
+    content: url("icons/downloads.svg")
+    left: -25px
+    top: 1px
+
+.movies-item-stars
+  margin-top: 22px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+.movies-item-release
+  margin-top: 8px
+
+.movies-item-info-name
+  font-size: 14px
+  vertical-align: bottom
+
+.movies-release-date
+  font-family: $calibri
+  font-size: 14px
+
+.movies-rating-stars
+  display: inline-block
+  margin-left: 7px
+
+.movies-info-play
+  transition: all ease 200ms
+  border-radius: 0 4px 0 4px
+  padding: 10px
+  position: absolute
+  right: 0
+  top: 0
+  background: $dark-grey

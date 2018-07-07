@@ -13,13 +13,13 @@
 </head>
 <body>
 
-  <svg height="0">
+  <svg class="hidden">
     <filter id="blur">
       <feGaussianBlur stdDeviation="30"/>
     </filter>
   </svg>
 
-  <svg height="0">
+  <svg class="hidden">
     <filter id="blur-download">
       <feGaussianBlur stdDeviation="1"/>
     </filter>
@@ -234,7 +234,9 @@
         <div class="movies-grid">
           <figure class="movies-grid-item">
             <span class="movies-like-count">3,542</span>
-            <img class="grid-picture" src="css/content-pictures/layer-17.png" alt="l-17">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-17.png" alt="l-17">
+            </a>
             <span class="movies-download">
               <a href="#">
                 <img src="css/icons/download.svg" alt="download">
@@ -243,11 +245,37 @@
             <figcaption class="movie-caption">Guardians of the Galaxy</figcaption>
           </figure>
           <figure class="movies-grid-item">
-            <img class="grid-picture" src="https://dummyimage.com/207x400/000/fff" alt="">
+            <div class="movies-item-info">
+              <div class="movies-info-play">
+                <img src="css/icons/play.svg" alt="play">
+              </div>
+              <span class="movies-item-rating">4,681</span>
+              <span class="movies-item-comments">58</span>
+              <span class="movies-item-download">642</span>
+              <div class="movies-item-stars">
+                <span class="movies-item-info-name">Rating:</span>
+                <div class="movies-rating-stars">
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/small-star-pst.svg" alt="str-pst"></span>
+                </div>
+              </div>
+              <div class="movies-item-release">
+                <span class="movies-item-info-name">Release Date:</span>
+                <span class="movies-release-date">May 03, 2013</span>
+              </div>
+            </div>
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/iron-man.png" alt="">
+            </a>
           </figure>
           <figure class="movies-grid-item">
             <span class="movies-like-count">2,248</span>
-            <img class="grid-picture" src="css/content-pictures/layer-19.png" alt="l-19">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-19.png" alt="l-19">
+            </a>
             <span class="movies-download">
               <a href="#">
                 <img src="css/icons/download.svg" alt="download">
@@ -257,7 +285,9 @@
           </figure>
           <figure class="movies-grid-item">
             <span class="movies-like-count">2,951</span>
-            <img class="grid-picture" src="css/content-pictures/layer-15.png" alt="l-15">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-15.png" alt="l-15">
+            </a>
             <span class="movies-download">
               <a href="#">
                 <img src="css/icons/download.svg" alt="download">
@@ -267,7 +297,9 @@
           </figure>
           <figure class="movies-grid-item">
             <span class="movies-like-count">3,248</span>
-            <img class="grid-picture" src="css/content-pictures/layer-20.png" alt="l-20">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-20.png" alt="l-20">
+            </a>
             <span class="movies-download">
               <a href="#">
                 <img src="css/icons/download.svg" alt="download">
@@ -277,7 +309,9 @@
           </figure>
           <figure class="movies-grid-item">
             <span class="movies-like-count">3,234</span>
-            <img class="grid-picture" src="css/content-pictures/layer-21.png" alt="l-21">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-21.png" alt="l-21">
+            </a>
             <span class="movies-download">
               <a href="#">
                 <img src="css/icons/download.svg" alt="download">
@@ -286,19 +320,70 @@
             <figcaption class="movie-caption">The First Avenger</figcaption>
           </figure>
           <figure class="movies-grid-item">
-            <img class="grid-picture" src="css/content-pictures/layer-6.png" alt="l-6">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-6.png" alt="l-6">
+            </a>
           </figure>
           <div class="movies-grid-item">
-            <img class="grid-picture" src="https://dummyimage.com/207x397/000/fff" alt="">
+            <div class="movies-item-info">
+              <div class="movies-info-play">
+                <img src="css/icons/play.svg" alt="play">
+              </div>
+              <span class="movies-item-rating">4,681</span>
+              <span class="movies-item-comments">58</span>
+              <span class="movies-item-download">642</span>
+              <div class="movies-item-stars">
+                <span class="movies-item-info-name">Rating:</span>
+                <div class="movies-rating-stars">
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/small-star-pst.svg" alt="str-pst"></span>
+                </div>
+              </div>
+              <div class="movies-item-release">
+                <span class="movies-item-info-name">Release Date:</span>
+                <span class="movies-release-date">May 03, 2013</span>
+              </div>
+            </div>
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/wlv.png" alt="">
+            </a>
           </div>
           <div class="movies-grid-item">
-            <img class="grid-picture" src="css/content-pictures/layer-12.png" alt="l-12">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-12.png" alt="l-12">
+            </a>
           </div>
           <div class="movies-grid-item">
-            <img class="grid-picture" src="css/content-pictures/layer-11.png" alt="l-11">
+            <a href="#" class="movies-grid-link">
+              <img class="grid-picture" src="css/content-pictures/layer-11.png" alt="l-11">
+            </a>
           </div>
           <div class="movies-grid-item">
-            <img class="grid-picture" src="https://dummyimage.com/207x154/000/fff" alt="">
+            <div class="movies-item-info">
+              <div class="movies-info-play">
+                <img src="css/icons/play.svg" alt="play">
+              </div>
+              <span class="movies-item-rating">4,681</span>
+              <span class="movies-item-comments">58</span>
+              <span class="movies-item-download">642</span>
+              <div class="movies-item-stars">
+                <span class="movies-item-info-name">Rating:</span>
+                <div class="movies-rating-stars">
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/star-small.svg" alt="star"></span>
+                  <span><img src="css/icons/small-star-pst.svg" alt="str-pst"></span>
+                </div>
+              </div>
+              <div class="movies-item-release">
+                <span class="movies-item-info-name">Release Date:</span>
+                <span class="movies-release-date">May 03, 2013</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
