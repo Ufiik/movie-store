@@ -17,8 +17,8 @@
     z-index: -1
 
 .download-info
-  max-width: 1151px
   height: 100%
+  max-width: 1151px
   display: -webkit-flex
   display: -ms-flex
   display: flex
@@ -58,6 +58,9 @@
     width: 500px
 
 @media (max-width: 500px)
+  .movies-item-info-name
+    font-size: 10px
+
   .sorting-wrapper
     li
       &::after
@@ -72,6 +75,8 @@
       height: auto
 
 @media (max-width: 545px)
+  .download-wrapper
+    height: 75px
   .download-info
     flex-direction: column
     align-items: center
